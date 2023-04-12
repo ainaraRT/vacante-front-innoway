@@ -1,0 +1,31 @@
+.page-full {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    .not-found {
+        margin-top: 25vh;
+        padding: 15px;
+        background-color: #f5f4f1;
+        border-color: #f5f4f1;
+
+        h2 {
+            font-weight: bold;
+        }
+
+        h3 {
+            font-style: italic;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        button {
+            margin: 20px auto 10px auto;
+            background-color: #1677ab;
+            color: white;
+            width: 50%;
+        }
+    }
+}

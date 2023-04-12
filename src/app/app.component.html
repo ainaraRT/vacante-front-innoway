@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse fixed-top">
   <div class="container-fluid">
     <div class="navbar-header col-2">
-      <a class="navbar-brand" href="notfound">
+      <a class="navbar-brand" [routerLink]="['/notfound']">
         <span class="title">sigaus</span> 
         <span class="material-symbols-outlined water-drop">water_drop</span>
       </a>
@@ -9,19 +9,19 @@
     </div>
     <ul class="links nav navbar-nav col-6">
       <div class="row">
-        <li class="col"><a href="notfound">INICIO</a></li>
-        <li class="active col"><a href="#">DECLARACIONES</a></li>
-        <li class="col"><a href="notfound">INSTALACIONES</a></li>
-        <li class="col"><a href="notfound">INCIDENCIAS/ALERTAS</a></li>
-        <li class="col"><a href="notfound">FINANCIACIÓN</a></li>
-        <li class="col"><a href="notfound">INFORMES</a></li>
+        <li class="col"><a [routerLink]="['/notfound']">INICIO</a></li>
+        <li class="active col"><a [routerLink]="['/declaraciones']">DECLARACIONES</a></li>
+        <li class="col"><a [routerLink]="['/notfound']">INSTALACIONES</a></li>
+        <li class="col"><a [routerLink]="['/notfound']">INCIDENCIAS/ALERTAS</a></li>
+        <li class="col"><a [routerLink]="['/notfound']">FINANCIACIÓN</a></li>
+        <li class="col"><a [routerLink]="['/notfound']">INFORMES</a></li>
       </div>
       
     </ul>
     <ul class="profile nav navbar-nav navbar-right col-4">
       <div class="row">
         <li class="col-3">
-          <a href="notfound">
+          <a [routerLink]="['/notfound']">
             <span class="material-symbols-outlined notifications">notifications_active</span>
             INCIDENCIAS
           </a>
@@ -37,12 +37,12 @@
         </li>
         
         <li class="col-3 profile-icon">
-          <a href="notfound"><span class="material-symbols-outlined">folder_shared</span>
+          <a [routerLink]="['/notfound']"><span class="material-symbols-outlined">folder_shared</span>
             PERFIL
           </a>
         </li>
         <li class="col-auto logout">
-          <a href="notfound"><span class="material-symbols-outlined logout-icon">logout</span></a></li>
+          <a [routerLink]="['/notfound']"><span class="material-symbols-outlined logout-icon">logout</span></a></li>
       </div>
       
     </ul>

@@ -1,0 +1,117 @@
+nav{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 0;
+
+    .navbar-header {
+        padding-top: 0;
+        padding-bottom: 0;
+        .navbar-brand {
+            .title {
+                font-size: 24px !important;
+                color: #626968;
+                font-weight: 600;
+            }
+            .water-drop {
+                color: #c7b516;
+                margin-top: 5px
+            }
+        }
+    
+        .border-link {
+            border-right: 1px solid #00000025;
+            height: auto;
+        }
+    }
+    
+    .links {
+        display: flex;
+        align-content: space-around;
+        a {
+            color: #626968;
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 16px;
+            margin-left: -10px;
+        }
+    
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    
+        li.active {
+            a {
+                color: black;
+            }
+            text-decoration: underline 6px #c7b516;
+            text-underline-offset: 8px;
+        }
+    }
+    
+    .profile {
+        display: flex;
+        padding-left: 5%;
+
+        div.row{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            a {
+                display: flex;
+                text-decoration: none;
+                padding: 5px 20px;
+                font-size: 12px !important;
+                color: #626968;
+                font-weight: bold;
+                padding-right: 2px;
+                padding-top: -2px;
+
+                span.material-symbols-outlined {
+                    color: #626968;
+                    font-size: 20px;
+                    padding-right: 2px;
+                }
+            }
+
+            .profile-icon {
+                margin-left: -20px;
+                margin-right: 10px;
+            }
+
+            .progress {
+                height: 5px;
+                border-radius: 5px;
+                background-color: #ffc36a;
+                margin-left: 5px;
+                margin-top: -2px;
+                // padding-left: -20px;
+        
+                .progress-bar {
+                    height: 100%;
+                    background: #ff906b;
+                    display: flex;
+                    align-items: center;
+                    transition: width 0.25s;
+                    border-radius: 5px;
+                }
+            }
+        
+            .border-link{
+                border-right: 1px solid #00000025;
+                margin-left: 7px;
+            }
+        
+            .logout {
+                background-color: #626968 !important;
+                padding: 5px 7px 5px 0;
+                .logout-icon{
+                    color: white;
+                }
+            }
+        }
+        
+    }
+}

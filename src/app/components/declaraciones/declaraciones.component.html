@@ -1,18 +1,85 @@
-<div class="mt-5 container page-full ">
+<div class="mt-5 container-md page-full ">
     <div class="row row-header">
         <div class="col-10 description">
             <h3>Declaraciones</h3>
-            <p>Elige la opción que desees para la creación de nuevas <br>
-                declaraciones, ya sea de forma manual, simples o múltiples o <br>
+            <p class="col-6">Elige la opción que desees para la creación de nuevas
+                declaraciones, ya sea de forma manual, simples o múltiples o
                 mediante un archivo de declaraciones.
             </p>
         </div>
-        <div class="card col-auto">
-            <p>MESES ABIERTOS <br> A <br> DECLARACIONES</p>
+        <div class="card col-2 d-none d-lg-block">
+            <p>MESES ABIERTOS A DECLARACIONES</p>
             <a class="button-icon">
                 <span class="material-symbols-outlined fill-icons">settings</span>
                 Configurar
             </a>
+        </div>
+        <div class="card col-auto d-none d-md-block d-lg-none">
+            <a><span class="material-symbols-outlined close small-icons row">close</span></a>
+            
+            <div class="row month-lock">
+                <p class="col-auto" style="width: 15%; padding: 0;">MESES ABIERTOS A DECLARACIONES</p>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    ENE
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                   FEB
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    MAR
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    ABR
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    MAY
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto green lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    JUN
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto green lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    JUL
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto grey lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    AGO
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto grey lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    SEP
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto grey lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    OCT
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto grey lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    NOV
+                </a>
+                <span class="col-auto border-link"></span>
+                <a class="col-auto grey lockers">
+                    <span class="material-symbols-outlined fill-icons small-icons row">lock</span>
+                    DEC
+                </a>
+            </div>
         </div>
     </div>
     <div class="row button-row">
@@ -42,9 +109,9 @@
 </div>
 
 <div class="grey-background">
-    <div class="mt-4 container" style="padding-top: 10px;">
+    <div class="mt-4 container-md" style="padding-top: 10px;">
         <div class="row filters">
-            <div class="col-auto">
+            <div class="col-auto d-md-none d-lg-block">
                 <div class="row filter">
                     <span class="col title">Filtrar</span>
                     <span class="col border-link"></span>
@@ -53,7 +120,7 @@
             <div class="col-auto">
                 <div class="row dates">
                     <span class="col-auto range">01/08/2022 - 31/08/2022</span>
-                    <span class="col border-link"></span>
+                    <span class="col border-link d-md-none d-lg-block"></span>
                 </div>
                 
             </div>
@@ -70,7 +137,7 @@
                     <a class="col"><span>OCT</span></a>
                     <a class="col"><span>NOV</span></a>
                     <a class="col"><span>DIC</span></a>
-                    <span class="col border-link"></span>
+                    <span class="col border-link d-md-none d-lg-block"></span>
                 </div>
                 
             </div>
@@ -80,7 +147,7 @@
             </div>
         </div>
     </div>
-    <div class="container mt-2">
+    <div class="container-md mt-2">
         <div class="row number-header">
             <div class="col-auto management">
                 <span class="row title">Gestión de declaraciones</span>
@@ -93,7 +160,7 @@
                     <span class="col-auto small-number"> 691.526,00 kg</span>
                 </div>
             </div>
-            <div class="col-auto" style="margin-left: 20px;">
+            <div class="col-auto numbers-out" style="margin-left: 20px;">
                 <div class="row numbers">
                     <span class="col-auto title">NÚMERO <br> SALIDAS</span>
                     <span class="col-auto big-number">0/</span>
@@ -108,7 +175,7 @@
             </div>
         </div>
     </div>
-    <div class="container mt-2">
+    <div class="container-md mt-2">
         <table class="table table-striped" id="excel-table">
             <thead>
                 <tr>
@@ -173,7 +240,7 @@
                             <span class="material-symbols-outlined fill-icons small-icons">notifications_active</span>
                             <span class="title"> {{gestion.incidencia[0]}}</span>
                         </div>
-                        <div class="col-auto" style="margin-left: -15px !important;">
+                        <div class="col-auto update" style="margin-left: -15px;">
                             <span class="material-symbols-outlined small-icons">update</span>
                             <span class="title">{{gestion.incidencia[1]}}</span>
                         </div>

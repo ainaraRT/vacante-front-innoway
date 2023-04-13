@@ -4,8 +4,6 @@ nav{
     background-color: white;
 
     .navbar-header {
-        // padding-top: 0;
-        // padding-bottom: 0;
         .navbar-brand {
             .title {
                 font-size: 24px !important;
@@ -116,4 +114,61 @@ nav{
         }
         
     }
+}
+
+@media (max-width: 900px) {
+    nav {
+        .links {
+            a {
+                padding: 0px;
+                margin-left: 0px;
+            }
+        
+            li.active {
+                text-decoration: underline 3px #c7b516;
+                text-underline-offset: 2px;
+            }
+        }
+        .profile {
+            padding-left: 0;
+    
+            div.row{
+                justify-content: space-between;
+    
+                a {
+                    margin-left: -15px;
+    
+                    span.material-symbols-outlined {
+                        color: #626968;
+                        font-size: 20px;
+                        padding-right: 2px;
+                    }
+                }
+    
+                .profile-icon {
+                    margin-left: -20px;
+                    margin-right: 10px;
+                }
+    
+                .progress {
+                    width: 30px;
+                    margin-left: 10px !important;
+                }
+            
+                .border-link{
+                    margin-left: -5px;
+                }
+            
+                .logout {
+                    background-color: #626968 !important;
+                    padding: 10px 7px 10px 10px;
+                    .logout-icon{
+                        color: white;
+                    }
+                }
+            }
+            
+        }
+    }
+        
 }

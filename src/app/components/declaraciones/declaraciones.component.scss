@@ -1,0 +1,430 @@
+.container-md {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 75%;
+}
+.row-header {
+    display: flex;
+    justify-content: space-between;
+
+    .description {
+        h3 {
+            font-weight: 700;
+        }
+    }
+    
+    .card {
+        border-radius: 0;
+        padding: 20px 15px 10px 20px;
+    
+        p {
+            font-size: 12px;
+            font-weight: 700;
+        }
+    
+        .button-icon {
+            text-decoration: none;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            color: #626968;
+            margin-top: -5px;
+    
+            span {
+                padding-right: 3px;
+                margin-top: -1px;
+                color: #1677ab;
+            }
+        }
+    }
+}
+
+.button-row {
+    margin-top: 15px;
+    a {
+        width: auto;
+        text-decoration: none;
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+        color: #00000075;
+
+        .material-symbols-outlined {
+            padding-right: 3px;
+            margin-top: -5px;
+        }
+    }
+
+    .border-link {
+        border-right: 2px solid #00000050;
+        padding-left: 20px;
+        height: 40px;
+        margin-top: -12px;
+    }
+}
+
+.grey-background {
+    background-color: #f5f4f1;
+    height: auto;
+}
+
+.filters {
+    background-color: #e7e6e3;
+    padding: 10px 0 10px 10px;
+    font-size: 14px;
+    display: flex;
+
+    .filter {
+        .title {
+            font-weight: 700;
+            padding-top: 3px;
+        }
+    }
+    .dates {
+        padding-left: -15px;
+        .range {
+            background-color: white;
+            padding-top: 3px;
+            padding-right: 50px;
+            font-weight: 600;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        }
+        .border-link {
+            margin-left: 20px;
+        }
+        
+    }
+
+    .months {
+        display: flex;
+        margin-left: -20px;
+        a {
+            text-decoration: none;
+            padding: 5px;
+            span {
+                background-color: white;
+                padding: 7px;
+                color: #000000;
+                font-weight: 700;
+            }
+        }
+        span.border-link {
+            border-left: 3px solid white;
+            margin-left: 15px;
+        }
+    }
+
+    .search-input {
+        background-color: white;
+        display: flex;
+        padding: 5px 5px;
+        width: 11%;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+        input {
+            border: 0;
+            margin-left: 3px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        span {
+            color: #626968;
+        }
+    }
+
+    span.border-link {
+        border-left: 3px solid white;
+        height: 30px;
+    }
+}
+
+.number-header {
+    padding: 10px 0;
+
+    .management {
+        margin-right: 20px;
+        padding-top: 5px;
+        .title {
+            font-style: italic;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .range {
+            font-style: italic;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .numbers {
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border: 1px solid #00000050;
+        .title {
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .big-number {
+            color: #a19279;
+            font-size: 30px;
+            margin-top: -5px;
+            padding-left: 30px;
+            font-weight: 600;
+        }
+        .small-number {
+            color: #a19279;
+            font-size: 20px;
+            margin-top: 7px;
+            margin-left: -25px;
+        }
+    }
+
+    .download-button {
+        margin-left: 10px;
+        font-size: 14px;
+        padding-top: 10px;
+        a {
+            display: flex;
+            color: #1677ab;
+            .title {
+                text-decoration: underline 1px #1677ab;
+                margin-left: 3px;
+                font-weight: 700;
+            }
+        }
+    }
+        
+}
+
+thead {
+    font-size: 14px;
+    color: #a19279;
+    background-color: #e7e6e3;
+
+    a {
+
+        .material-symbols-outlined {
+            margin-bottom: -5px;
+            margin-left: 3px;
+            font-size: 17px;
+        }
+    }
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: white;
+}
+
+tbody {
+    font-size: 14px;
+
+    .pdf-button {
+        color: #1677ab;
+        font-weight: 700;
+        text-decoration: none;
+        display: flex;
+        .title {
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+    }
+    .notifications {
+        .title {
+            margin-right: 15px;
+        }
+        .material-symbols-outlined {
+            color: #62696875;
+            font-size: 20px;
+            margin-right: 3px;
+        }
+        
+    }
+
+    a {
+        margin-left: -10px;
+        color: #62696875;
+    }
+}
+
+.footer {
+    font-size: 14px;
+    align-items: center;
+    margin-top: -20px;
+
+    .show {
+        color:#626968;
+        font-weight: 600;
+    }
+
+    .footer-span {
+        margin-left: 10px;
+        .title {
+            font-weight: 600;
+        }
+    
+        .material-symbols-outlined {
+            margin-right: -15px;
+            font-size: 20px;
+        }
+        .bell {
+            color: #ff906b;
+        }
+        .time {
+            color: #ffc36a;
+        }
+    }
+
+    ngb-pagination {
+        padding: 0 10px;
+        margin: 15px 10px 0 10px;
+    }
+
+    ::ng-deep ngb-pagination ul > li:not(.active) > a {
+        color:#626968;
+        font-weight: 600;
+        background-color: #f5f4f1 !important;
+        border-radius: 0;
+  }
+
+    ::ng-deep ngb-pagination ul > li.active > a {
+        color:#626968;
+        font-weight: 600;
+        background-color: white !important;
+        border-color: #626968;;
+  }
+
+  select {
+    color:#626968;
+    font-weight: 600;
+    border-radius: 0;
+    padding: 10px 40px 10px 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+}
+
+@media (max-width: 900px) {
+    .container-md {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    .close {
+        font-size: 20px;
+        margin-top: -10px;
+        float: right;
+    }
+    .button-row {
+        margin-top: 30px;
+    }
+    .month-lock {
+        .lockers {
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #1677ab;
+            padding: 0;
+            margin: 0px 10px;
+
+            .material-symbols-outlined {
+                padding-left: 12px;
+            }
+        }
+        span.border-link {
+            border-left: 2px solid #00000050;
+            height: 30px;
+            padding: 0;
+            margin: 0px 2px;
+        }
+    
+        .green {
+            color: rgb(105, 199, 105);
+        }
+    
+        .grey {
+            color: #00000050;
+        }
+    }
+    
+    .filters {
+        display: flex;
+        justify-content: center;
+    
+        .dates {
+            .range {
+                padding: 4px 145px 4px 5px;
+            }
+        }
+    
+        .months {
+            margin: 20px 0;
+        }
+    
+        .search-input {
+            width: 40%;
+        }
+    }
+
+    .number-header {
+        .management {
+            width: 17%;
+            padding-top: 0;
+            margin-right: 10px;
+        }
+        .numbers-out {
+            margin-left: 10px !important;
+        }
+        .download-button {
+            width: 15%;
+            font-size: 12px;
+            margin-left: 0;
+            margin-top: -10px;
+        }
+    }
+    table {
+        thead {
+            font-size: 12px;
+        }
+        tbody {
+            font-size: 12px;
+            .notifications {
+                .material-symbols-outlined {
+                    font-size: 16px;
+                }
+                .update {
+                    margin-left: 0px !important;
+                }
+            }
+            
+        }
+    }
+    
+    .footer {
+        font-size: 12px;
+        justify-content: center;
+        .show {
+            color:#626968;
+            font-weight: 600;
+            width: 20%;
+        }
+    
+        .footer-span {
+            margin-left: 10px;
+            .title {
+                font-weight: 600;
+            }
+        
+            .material-symbols-outlined {
+                margin-right: -15px;
+                font-size: 20px;
+            }
+            .bell {
+                color: #ff906b;
+            }
+            .time {
+                color: #ffc36a;
+            }
+        }
+    }
+}

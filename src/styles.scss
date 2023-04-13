@@ -3,5 +3,18 @@
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
 }
+div.page-full {
+    margin-top: 65px !important;
+}
+
+.small-icons {
+    font-variation-settings:
+        'opsz' 20;
+}
+
+.fill-icons {
+    font-variation-settings:
+        'FILL' 1,
+}
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

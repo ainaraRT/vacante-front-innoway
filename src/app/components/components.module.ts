@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,7 +13,10 @@ import { DeclaracionesComponent } from './declaraciones/declaraciones.component'
     DeclaracionesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbPaginationModule
   ]
 })
 export class ComponentsModule { }

@@ -1,0 +1,224 @@
+<div class="mt-5 container page-full ">
+    <div class="row row-header">
+        <div class="col-10 description">
+            <h3>Declaraciones</h3>
+            <p>Elige la opción que desees para la creación de nuevas <br>
+                declaraciones, ya sea de forma manual, simples o múltiples o <br>
+                mediante un archivo de declaraciones.
+            </p>
+        </div>
+        <div class="card col-auto">
+            <p>MESES ABIERTOS <br> A <br> DECLARACIONES</p>
+            <a class="button-icon">
+                <span class="material-symbols-outlined fill-icons">settings</span>
+                Configurar
+            </a>
+        </div>
+    </div>
+    <div class="row button-row">
+        <div class="col-auto">
+            <a >
+                <span class="material-symbols-outlined small-icons">border_color</span>
+                CREAR
+                <span class="border-link"></span>
+            </a>
+        </div>
+        <div class="col-auto">
+            <a>
+                <span class="material-symbols-outlined small-icons">upload_file</span>
+                SUBIR ARCHIVO
+                <span class="border-link"></span>
+            </a>
+        </div>
+        <div class="col-auto">
+            <a>
+                <span class="material-symbols-outlined small-icons">history</span>
+                HISTÓRICO DE ARCHIVOS
+                <span class="border-link"></span>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+<div class="grey-background">
+    <div class="mt-4 container" style="padding-top: 10px;">
+        <div class="row filters">
+            <div class="col-auto">
+                <div class="row filter">
+                    <span class="col title">Filtrar</span>
+                    <span class="col border-link"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="row dates">
+                    <span class="col-auto range">01/08/2022 - 31/08/2022</span>
+                    <span class="col border-link"></span>
+                </div>
+                
+            </div>
+            <div class="col-auto">
+                <div class="row months">
+                    <a class="col"><span>ENE</span></a>
+                    <a class="col"><span>FEB</span></a>
+                    <a class="col"><span>MAR</span></a>
+                    <a class="col"><span>ABR</span></a>
+                    <a class="col"><span>MAY</span></a>
+                    <a class="col"><span>JUN</span></a>
+                    <a class="col"><span>JUL</span></a>
+                    <a class="col"><span>AGO</span></a>
+                    <a class="col"><span>OCT</span></a>
+                    <a class="col"><span>NOV</span></a>
+                    <a class="col"><span>DIC</span></a>
+                    <span class="col border-link"></span>
+                </div>
+                
+            </div>
+            <div class="col-auto search-input">
+                <span class="material-symbols-outlined small-icons">search</span>
+                <input type="text" placeholder="Buscar">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2">
+        <div class="row number-header">
+            <div class="col-auto management">
+                <span class="row title">Gestión de declaraciones</span>
+                <span class="row range">ago 1, 2022 - ago 31, 2022</span>
+            </div>
+            <div class="col-auto">
+                <div class="row numbers">
+                    <span class="col-auto title">NÚMERO <br> ENTRADAS</span>
+                    <span class="col-auto big-number">58/</span>
+                    <span class="col-auto small-number"> 691.526,00 kg</span>
+                </div>
+            </div>
+            <div class="col-auto" style="margin-left: 20px;">
+                <div class="row numbers">
+                    <span class="col-auto title">NÚMERO <br> SALIDAS</span>
+                    <span class="col-auto big-number">0/</span>
+                    <span class="col-auto small-number"> 0,00 kg</span>
+                </div>
+            </div>
+            <div class="col-auto download-button">
+                <a (click)="exportExcel()">
+                    <span class="material-symbols-outlined small-icons">download</span>
+                    <span class="title"> Exportar todas las declaraciones a Excel</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2">
+        <table class="table table-striped" id="excel-table">
+            <thead>
+                <tr>
+                    <th scope="col-auto"><input type="checkbox"></th>
+                    <th scope="col-auto">
+                        <a (click)="sortBy('referencia')">
+                            <span>
+                                Nº REFERENCIA
+                            </span>
+                            <span class="material-symbols-outlined small-icons">sort_by_alpha</span>
+                        </a>
+                    </th>
+                    <th scope="col-auto">
+                        
+                        <a (click)="sortBy('tipo')">
+                            <span>TIPO</span>
+                            <span class="material-symbols-outlined small-icons">sort_by_alpha</span>
+                        </a>
+                    </th>
+                    <th scope="col-auto">
+                        CANTIDAD
+                        <a (click)="sortBy('cantidad')">
+                            <span class="material-symbols-outlined small-icons">sort_by_alpha</span>
+                        </a>
+                    </th>
+                    <th scope="col-auto">
+                        ORIGEN (PROVINCIA)
+                        <a (click)="sortBy('origen')">
+                            <span class="material-symbols-outlined small-icons">sort_by_alpha</span>
+                        </a>
+                    </th>
+                    <th scope="col-auto">
+                        FECHA
+                        <a (click)="sortBy('fecha')">
+                            <span class="material-symbols-outlined small-icons">sort_by_alpha</span>
+                        </a>
+                    </th>
+                    <th scope="col-auto" style="text-align: center;">
+                        % OLEOSO
+                        <a (onclick)="sortBy('porcentaje')">
+                            <span class="material-symbols-outlined small-icons">sort_by_alpha</span>
+                        </a>
+                    </th>
+                    <th scope="col-auto">INCIDENCIA</th>
+                    <th scope="col-auto"></th>
+                    <th scope="col-auto">ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let gestion of gestiones">
+                    <th scope="row">
+                        <input type="checkbox">
+                    </th>
+                    <td>{{ gestion.referencia }}</td>
+                    <td>{{ gestion.tipo}}</td>
+                    <td>{{ gestion.cantidad }}</td>
+                    <td>{{ gestion.origen }}</td>
+                    <td>{{ gestion.fecha }}</td>
+                    <td style="text-align: center;">{{ gestion.porcentaje }}</td>
+                    <td class="notifications row">
+                        <div class="col-auto">
+                            <span class="material-symbols-outlined fill-icons small-icons">notifications_active</span>
+                            <span class="title"> {{gestion.incidencia[0]}}</span>
+                        </div>
+                        <div class="col-auto" style="margin-left: -15px !important;">
+                            <span class="material-symbols-outlined small-icons">update</span>
+                            <span class="title">{{gestion.incidencia[1]}}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <a class="pdf-button" style="display: flex;">
+                            <span class="material-symbols-outlined fill-icons small-icons">draft</span>
+                            <span class="title"> Ver PDF</span>
+                        </a>
+                    </td>
+                    <td style="text-align: center;">
+                        <a>
+                            <span class="material-symbols-outlined">more_vert</span>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-end p-2 footer">
+            <span class="show">Mostrando {{page == 1 ? 1 : (pageSize * page - (pageSize) + 1)}} a {{collectionSize < (pageSize * page) ? (collectionSize) : (pageSize * page)}} de {{collectionSize}} declaraciones</span>
+            <ngb-pagination
+                [collectionSize]="collectionSize"
+                [(page)]="page"
+                [pageSize]="pageSize"
+                (pageChange)="refreshTable()"
+            >
+            </ngb-pagination>
+        
+            <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshTable()">
+                <option [ngValue]="5">5</option>
+                <option [ngValue]="10">10</option>
+                <option [ngValue]="15">15</option>
+            </select>
+
+            <div>
+                <span class="row footer-span">
+                    <span class="material-symbols-outlined col-auto fill-icons bell">notifications_active</span>
+                    <span class="col-auto title">Notificación pendiente</span>
+                </span>
+                <span class="row footer-span">
+                    <span class="material-symbols-outlined col-auto time">update</span>
+                    <span class="col-auto title">Notificación en espera</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
